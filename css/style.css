@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    border: none;
+    list-style-type: none;
+}
+
+html,
+body {
+    overflow: hidden;
+    background-color: #000;
+}
+
+body {
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+
+canvas {
+    width: 100%;
+    height: 100%;
+
+}
+
+.flex-container {
+    pointer-events: none;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.flex-container>div {
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Main text section */
+.main{
+    max-width: 500px;
+}
+
+.main>h1{
+    font-family: 'Oswald', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 3.2em;
+    font-weight: 200;
+    line-height: 1.0;
+    letter-spacing: 0.048em;
+    color: #b3b3b3;
+}
+
+.main>p{
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.2em;
+    line-height: 1.4;
+    color: #fff;
+
+}
+
+#imm{
+    color: #fff;
+    font-weight: 400;
+    animation:glow 2500ms linear infinite 4000ms;
+    animation-delay: 2.3s;
+}
+
+#ins{
+    color: #b3b3b3;
+    font-weight: 200;
+    animation:blu 2500ms linear infinite 2000ms;
+    animation-delay: 3.3s;
+    animation-duration: 6s;
+}
+#int{
+    color: #fff;
+    font-weight: 400;
+    animation:glow 2500ms linear infinite 4000ms;
+    animation-delay: 4.3s;
+    animation-duration: 5.8s;
+}
+#pro{
+    color: #b3b3b3;
+    font-weight: 200;
+    animation:blu 2500ms linear infinite 2000ms;
+    animation-delay: 3.3s;
+    animation-duration: 6s;
+}
+#mix{
+    color: #b3b3b3;
+    font-weight: 200;
+    animation:blu 2500ms linear infinite 2000ms;
+    animation-delay: 3.3s;
+    animation-duration: 2s;
+}
+#app{
+    color: #b3b3b3;
+    font-weight: 200;
+    animation:blu 2500ms linear infinite 2000ms;
+    animation-delay: 3.3s;
+    animation-duration: 4s;
+}
+
+#rea{
+    color: #fff;
+    font-weight: 400;
+    animation:glow 4500ms linear infinite 2500ms;
+    animation-delay: 3s;
+}
+
+
+
+
+/* Links and buttons section */
+.links{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.0em;
+    font-weight: 300;
+    line-height: 2.0;
+    letter-spacing: 0.078em;
+    color: #fff;
+}
+
+a:link {
+    pointer-events: auto;
+    color: #67c2ff;
+    text-decoration: none;
+  }
+  
+
+a:visited {
+    color: #67c2ff;
+    text-decoration: none;
+  }
+  
+a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+a:active {
+    color: #fff;
+    text-decoration: none;
+  }
+
+/* Social media links and copyright */
+.footer{
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 0.068em;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer>span{
+    pointer-events: auto;
+    color: #888888;
+}
+
+.footer>span:hover{
+    color: #b3b3b3;
+}
+
+.icon {
+    font-size: 130%;
+    float: right;
+}
+
+
+@keyframes glow {
+    40% {
+      text-shadow: 0 0 18px #fff;
+      filter: blur(1.0px);
+    }
+    
+}
+
+@keyframes blu {
+    40% {
+      /* filter: blur(2.5px); */
+    }
+}
